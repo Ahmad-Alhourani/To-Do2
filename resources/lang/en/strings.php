@@ -44,6 +44,11 @@ return [
             'title' => ' Todoes'
         ],
         //end_Todo_end
+        //start_Comment_start
+        'comments' => [
+            'title' => ' Comments'
+        ],
+        //end_Comment_end
         // Do not delete me :) I'm used for auto-generation
 
         'general' => [

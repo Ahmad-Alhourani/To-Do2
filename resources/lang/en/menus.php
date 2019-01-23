@@ -52,8 +52,11 @@ return [
             'men' => ' People',
             //finish_Person_finish
             //begin_Todo_begin
-            'todos' => ' Todoes'
+            'todos' => ' Todoes',
             //finish_Todo_finish
+            //begin_Comment_begin
+            'comments' => ' Comments'
+            //finish_Comment_finish
             // **********Do_Not_Delete_me****************
         ],
 
@@ -76,8 +79,19 @@ return [
             'edit' => 'Edit Todo',
             'management' => 'Todo Management',
             'main' => ' Todoes'
-        ]
+        ],
         //end_Todo_end
+
+        //start_Comment_start
+        'comments' => [
+            'view' => 'View Comment',
+            'all' => 'All  Comments',
+            'create' => 'Create Comment',
+            'edit' => 'Edit Comment',
+            'management' => 'Comment Management',
+            'main' => ' Comments'
+        ]
+        //end_Comment_end
 
         // Do not delete me :) I'm used for auto-generation
     ],

@@ -159,8 +159,32 @@ return [
                 'deleted_at' => 'Deleted At',
                 'last_updated' => 'Last Update'
             ]
-        ]
+        ],
         //end_Todo_end
+
+        //start_Comment_start
+        'comments' => [
+            'management' => ' Comments Management',
+            'create' => 'Create Comment',
+            'view' => 'View Comment',
+            'edit' => 'Edit Comment',
+
+            'table' => [
+                'id' => "Id",
+                'body' => "Body",
+                'person_id' => "User Name",
+                'todo_id' => "Todo Title",
+                'sort' => 'Sort',
+                'total' => ' Comments total| Comments total'
+            ],
+
+            'content' => [
+                'created_at' => 'Created At',
+                'deleted_at' => 'Deleted At',
+                'last_updated' => 'Last Update'
+            ]
+        ]
+        //end_Comment_end
 
         // Do not delete me :) I'm used for auto-generation
     ],

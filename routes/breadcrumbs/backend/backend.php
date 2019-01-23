@@ -75,6 +75,40 @@ Breadcrumbs::register('admin.todo.edit', function ($breadcrumbs, $id) {
 });
 //end_Todo_end
 
+//start_Comment_start
+Breadcrumbs::register('admin.comment.index', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.dashboard');
+    $breadcrumbs->push(
+        __('strings.backend.comments.title'),
+        route('admin.comment.index')
+    );
+});
+
+Breadcrumbs::register('admin.comment.create', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.comment.index');
+    $breadcrumbs->push(
+        __('labels.backend.comments.create'),
+        route('admin.comment.create')
+    );
+});
+
+Breadcrumbs::register('admin.comment.show', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.comment.index');
+    $breadcrumbs->push(
+        __('menus.backend.comments.view'),
+        route('admin.comment.show', $id)
+    );
+});
+
+Breadcrumbs::register('admin.comment.edit', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.comment.index');
+    $breadcrumbs->push(
+        __('menus.backend.comments.edit'),
+        route('admin.comment.edit', $id)
+    );
+});
+//end_Comment_end
+
 //*****Do Not Delete Me
 
 require __DIR__ . '/auth.php';

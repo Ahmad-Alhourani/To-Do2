@@ -209,8 +209,16 @@ return [
                 'title' => "Title",
                 'description' => "Description",
                 'deadline' => "Deadline"
-            ]
+            ],
             //end_Todo_end
+            //start_Comment_start
+            'comments' => [
+                'id' => "Id",
+                'body' => "Body",
+                'person_id' => "User Name",
+                'todo_id' => "Todo Title"
+            ]
+            //end_Comment_end
             // Do not delete me :) I'm used for auto-generation
         ],
 

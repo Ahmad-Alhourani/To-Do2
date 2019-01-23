@@ -22,6 +22,12 @@
             </li>
             {{--end_Todo_end--}}
 
+        {{--start_Comment_start--}}
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/comments')) }}" href=" {{ route('admin.comment.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.comments') }}</a>
+            </li>
+            {{--end_Comment_end--}}
+
 {{--Do not delete me :) I'm used for auto-generation--}}
 
             <li class="nav-title">

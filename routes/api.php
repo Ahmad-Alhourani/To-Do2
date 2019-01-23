@@ -26,4 +26,9 @@ Route::resource('todo', 'API\TodoAPIController');
 
 //end_Todo_end
 
+//start_Comment_start
+Route::resource('comment', 'API\CommentAPIController');
+
+//end_Comment_end
+
 //*****Do Not Delete Me
