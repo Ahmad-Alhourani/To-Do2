@@ -109,6 +109,40 @@ Breadcrumbs::register('admin.comment.edit', function ($breadcrumbs, $id) {
 });
 //end_Comment_end
 
+//start_Category_start
+Breadcrumbs::register('admin.category.index', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.dashboard');
+    $breadcrumbs->push(
+        __('strings.backend.categories.title'),
+        route('admin.category.index')
+    );
+});
+
+Breadcrumbs::register('admin.category.create', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.category.index');
+    $breadcrumbs->push(
+        __('labels.backend.categories.create'),
+        route('admin.category.create')
+    );
+});
+
+Breadcrumbs::register('admin.category.show', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.category.index');
+    $breadcrumbs->push(
+        __('menus.backend.categories.view'),
+        route('admin.category.show', $id)
+    );
+});
+
+Breadcrumbs::register('admin.category.edit', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.category.index');
+    $breadcrumbs->push(
+        __('menus.backend.categories.edit'),
+        route('admin.category.edit', $id)
+    );
+});
+//end_Category_end
+
 //*****Do Not Delete Me
 
 require __DIR__ . '/auth.php';

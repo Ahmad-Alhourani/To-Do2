@@ -217,8 +217,14 @@ return [
                 'body' => "Body",
                 'person_id' => "User Name",
                 'todo_id' => "Todo Title"
-            ]
+            ],
             //end_Comment_end
+            //start_Category_start
+            'categories' => [
+                'id' => "Id",
+                'name' => "Name"
+            ]
+            //end_Category_end
             // Do not delete me :) I'm used for auto-generation
         ],
 

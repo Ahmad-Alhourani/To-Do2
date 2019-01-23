@@ -49,6 +49,11 @@ return [
             'title' => ' Comments'
         ],
         //end_Comment_end
+        //start_Category_start
+        'categories' => [
+            'title' => ' Categories'
+        ],
+        //end_Category_end
         // Do not delete me :) I'm used for auto-generation
 
         'general' => [

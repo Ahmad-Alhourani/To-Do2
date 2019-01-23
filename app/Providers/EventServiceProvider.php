@@ -52,8 +52,12 @@ class EventServiceProvider extends ServiceProvider
         //end_Todo_end
 
         //start_Comment_start
-        \App\Listeners\Backend\CommentEventListener::class
+        \App\Listeners\Backend\CommentEventListener::class,
         //end_Comment_end
+
+        //start_Category_start
+        \App\Listeners\Backend\CategoryEventListener::class
+        //end_Category_end
 
         // Do not delete me :) I'm used for auto-generation
     ];

@@ -65,8 +65,16 @@ return [
             'saved' => 'Comment saved successfully.',
             'updated' => 'Comment updated successfully.',
             'deleted' => 'Comment deleted successfully.'
-        ]
+        ],
         //end_Comment_end
+
+        //start_Category_start
+        'category' => [
+            'saved' => 'Category saved successfully.',
+            'updated' => 'Category updated successfully.',
+            'deleted' => 'Category deleted successfully.'
+        ]
+        //end_Category_end
 
         // Do not delete me :) I'm used for auto-generation
     ]

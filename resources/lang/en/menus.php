@@ -55,8 +55,11 @@ return [
             'todos' => ' Todoes',
             //finish_Todo_finish
             //begin_Comment_begin
-            'comments' => ' Comments'
+            'comments' => ' Comments',
             //finish_Comment_finish
+            //begin_Category_begin
+            'categories' => ' Categories'
+            //finish_Category_finish
             // **********Do_Not_Delete_me****************
         ],
 
@@ -90,8 +93,19 @@ return [
             'edit' => 'Edit Comment',
             'management' => 'Comment Management',
             'main' => ' Comments'
-        ]
+        ],
         //end_Comment_end
+
+        //start_Category_start
+        'categories' => [
+            'view' => 'View Category',
+            'all' => 'All  Categories',
+            'create' => 'Create Category',
+            'edit' => 'Edit Category',
+            'management' => 'Category Management',
+            'main' => ' Categories'
+        ]
+        //end_Category_end
 
         // Do not delete me :) I'm used for auto-generation
     ],

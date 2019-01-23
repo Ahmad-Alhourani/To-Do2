@@ -31,4 +31,9 @@ Route::resource('comment', 'API\CommentAPIController');
 
 //end_Comment_end
 
+//start_Category_start
+Route::resource('category', 'API\CategoryAPIController');
+
+//end_Category_end
+
 //*****Do Not Delete Me
