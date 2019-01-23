@@ -201,8 +201,16 @@ return [
                 'name' => "Name",
                 'email' => "Email",
                 'sms' => "SMS"
-            ]
+            ],
             //end_Person_end
+            //start_Todo_start
+            'todos' => [
+                'id' => "Id",
+                'title' => "Title",
+                'description' => "Description",
+                'deadline' => "Deadline"
+            ]
+            //end_Todo_end
             // Do not delete me :) I'm used for auto-generation
         ],
 

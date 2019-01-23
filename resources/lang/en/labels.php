@@ -135,8 +135,32 @@ return [
                 'deleted_at' => 'Deleted At',
                 'last_updated' => 'Last Update'
             ]
-        ]
+        ],
         //end_Person_end
+
+        //start_Todo_start
+        'todos' => [
+            'management' => ' Todoes Management',
+            'create' => 'Create Todo',
+            'view' => 'View Todo',
+            'edit' => 'Edit Todo',
+
+            'table' => [
+                'id' => "Id",
+                'title' => "Title",
+                'description' => "Description",
+                'deadline' => "Deadline",
+                'sort' => 'Sort',
+                'total' => ' Todoes total| Todoes total'
+            ],
+
+            'content' => [
+                'created_at' => 'Created At',
+                'deleted_at' => 'Deleted At',
+                'last_updated' => 'Last Update'
+            ]
+        ]
+        //end_Todo_end
 
         // Do not delete me :) I'm used for auto-generation
     ],

@@ -16,6 +16,12 @@
             </li>
             {{--end_Person_end--}}
 
+        {{--start_Todo_start--}}
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/todos')) }}" href=" {{ route('admin.todo.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.todos') }}</a>
+            </li>
+            {{--end_Todo_end--}}
+
 {{--Do not delete me :) I'm used for auto-generation--}}
 
             <li class="nav-title">

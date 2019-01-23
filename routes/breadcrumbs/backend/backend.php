@@ -41,6 +41,40 @@ Breadcrumbs::register('admin.man.edit', function ($breadcrumbs, $id) {
 });
 //end_Person_end
 
+//start_Todo_start
+Breadcrumbs::register('admin.todo.index', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.dashboard');
+    $breadcrumbs->push(
+        __('strings.backend.todos.title'),
+        route('admin.todo.index')
+    );
+});
+
+Breadcrumbs::register('admin.todo.create', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.todo.index');
+    $breadcrumbs->push(
+        __('labels.backend.todos.create'),
+        route('admin.todo.create')
+    );
+});
+
+Breadcrumbs::register('admin.todo.show', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.todo.index');
+    $breadcrumbs->push(
+        __('menus.backend.todos.view'),
+        route('admin.todo.show', $id)
+    );
+});
+
+Breadcrumbs::register('admin.todo.edit', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.todo.index');
+    $breadcrumbs->push(
+        __('menus.backend.todos.edit'),
+        route('admin.todo.edit', $id)
+    );
+});
+//end_Todo_end
+
 //*****Do Not Delete Me
 
 require __DIR__ . '/auth.php';

@@ -49,8 +49,16 @@ return [
             'saved' => 'Person saved successfully.',
             'updated' => 'Person updated successfully.',
             'deleted' => 'Person deleted successfully.'
-        ]
+        ],
         //end_Person_end
+
+        //start_Todo_start
+        'todo' => [
+            'saved' => 'Todo saved successfully.',
+            'updated' => 'Todo updated successfully.',
+            'deleted' => 'Todo deleted successfully.'
+        ]
+        //end_Todo_end
 
         // Do not delete me :) I'm used for auto-generation
     ]

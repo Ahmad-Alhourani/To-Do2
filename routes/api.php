@@ -21,4 +21,9 @@ Route::resource('man', 'API\PersonAPIController');
 
 //end_Person_end
 
+//start_Todo_start
+Route::resource('todo', 'API\TodoAPIController');
+
+//end_Todo_end
+
 //*****Do Not Delete Me
