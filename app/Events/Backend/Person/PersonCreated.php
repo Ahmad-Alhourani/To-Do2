@@ -1,24 +1,25 @@
 <?php
-namespace App\Events\Backend\Person;
+    namespace App\Events\Backend\Person;
 
-use Illuminate\Queue\SerializesModels;
-/**
- * Class PersonCreated.
- */
-class PersonCreated
-{
-    use SerializesModels;
+    use Illuminate\Queue\SerializesModels;
     /**
-     * @var
-     */
-
-    public $man;
-
-    /**
-     * @param $man
-     */
-    public function __construct($man)
+    * Class PersonCreated.
+    */
+    class PersonCreated
     {
-        $this->man = $man;
+            use SerializesModels;
+            /**
+            * @var
+            */
+
+
+            public $man ;
+
+            /**
+            * @param $man
+            */
+            public function __construct($man)
+            {
+                 $this->man = $man;
+            }
     }
-}

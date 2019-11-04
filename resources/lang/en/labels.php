@@ -114,101 +114,125 @@ return [
             ]
         ],
 
-        //start_Person_start
-        'men' => [
+        
+
+        
+
+        
+
+        
+
+              ,
+      //start_Person_start
+            'men' => [
             'management' => ' People Management',
-            'create' => 'Create Person',
+            'create'     => 'Create Person',
             'view' => 'View Person',
-            'edit' => 'Edit Person',
+            'edit'       => 'Edit Person',
 
             'table' => [
-                'id' => "Id",
-                'name' => "Name",
-                'email' => "Email",
-                'sms' => "SMS",
-                'sort' => 'Sort',
-                'total' => ' People total| People total'
+                    'id' => "Id", 
+                    'name' => "Name", 
+                    'email' => "Email", 
+                    'sms' => "SMS", 
+                    'sort'  => 'Sort',
+                    'total' => ' People total| People total',
             ],
 
-            'content' => [
-                'created_at' => 'Created At',
-                'deleted_at' => 'Deleted At',
-                'last_updated' => 'Last Update'
-            ]
-        ],
-        //end_Person_end
 
-        //start_Todo_start
-        'todos' => [
+            'content' => [
+                    'created_at'    => 'Created At',
+                     'deleted_at'    => 'Deleted At',
+                    'last_updated'  => 'Last Update',    
+
+
+                  ]
+            ]
+            //end_Person_end
+
+                  ,
+      //start_Todo_start
+            'todos' => [
             'management' => ' Todoes Management',
-            'create' => 'Create Todo',
+            'create'     => 'Create Todo',
             'view' => 'View Todo',
-            'edit' => 'Edit Todo',
+            'edit'       => 'Edit Todo',
 
             'table' => [
-                'id' => "Id",
-                'title' => "Title",
-                'description' => "Description",
-                'deadline' => "Deadline",
-                'sort' => 'Sort',
-                'total' => ' Todoes total| Todoes total'
+                    'id' => "Id", 
+                    'title' => "Title", 
+                    'description' => "Description", 
+                    'deadline' => "Deadline", 
+                    'sort'  => 'Sort',
+                    'total' => ' Todoes total| Todoes total',
             ],
 
-            'content' => [
-                'created_at' => 'Created At',
-                'deleted_at' => 'Deleted At',
-                'last_updated' => 'Last Update'
-            ]
-        ],
-        //end_Todo_end
 
-        //start_Comment_start
-        'comments' => [
+            'content' => [
+                    'created_at'    => 'Created At',
+                     'deleted_at'    => 'Deleted At',
+                    'last_updated'  => 'Last Update',    
+
+
+                  ]
+            ]
+            //end_Todo_end
+
+                  ,
+      //start_Comment_start
+            'comments' => [
             'management' => ' Comments Management',
-            'create' => 'Create Comment',
+            'create'     => 'Create Comment',
             'view' => 'View Comment',
-            'edit' => 'Edit Comment',
+            'edit'       => 'Edit Comment',
 
             'table' => [
-                'id' => "Id",
-                'body' => "Body",
-                'person_id' => "User Name",
-                'todo_id' => "Todo Title",
-                'sort' => 'Sort',
-                'total' => ' Comments total| Comments total'
+                    'id' => "Id", 
+                    'body' => "Body", 
+                    'person_id' => "User Name", 
+                    'todo_id' => "Todo Title", 
+                    'sort'  => 'Sort',
+                    'total' => ' Comments total| Comments total',
             ],
 
-            'content' => [
-                'created_at' => 'Created At',
-                'deleted_at' => 'Deleted At',
-                'last_updated' => 'Last Update'
-            ]
-        ],
-        //end_Comment_end
 
-        //start_Category_start
-        'categories' => [
+            'content' => [
+                    'created_at'    => 'Created At',
+                     'deleted_at'    => 'Deleted At',
+                    'last_updated'  => 'Last Update',    
+
+
+                  ]
+            ]
+            //end_Comment_end
+
+                  ,
+      //start_Category_start
+            'categories' => [
             'management' => ' Categories Management',
-            'create' => 'Create Category',
+            'create'     => 'Create Category',
             'view' => 'View Category',
-            'edit' => 'Edit Category',
+            'edit'       => 'Edit Category',
 
             'table' => [
-                'id' => "Id",
-                'name' => "Name",
-                'sort' => 'Sort',
-                'total' => ' Categories total| Categories total'
+                    'id' => "Id", 
+                    'name' => "Name", 
+                    'sort'  => 'Sort',
+                    'total' => ' Categories total| Categories total',
             ],
 
-            'content' => [
-                'created_at' => 'Created At',
-                'deleted_at' => 'Deleted At',
-                'last_updated' => 'Last Update'
-            ]
-        ]
-        //end_Category_end
 
-        // Do not delete me :) I'm used for auto-generation
+            'content' => [
+                    'created_at'    => 'Created At',
+                     'deleted_at'    => 'Deleted At',
+                    'last_updated'  => 'Last Update',  
+
+
+                  ]
+            ]
+            //end_Category_end
+
+            // Do not delete me :) I'm used for auto-generation
     ],
 
     'frontend' => [

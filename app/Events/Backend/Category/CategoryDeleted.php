@@ -1,24 +1,25 @@
 <?php namespace App\Events\Backend\Category;
 
-use Illuminate\Queue\SerializesModels;
-/**
- * Class CategoryDeleted.
- */
-
-class CategoryDeleted
-{
-    use SerializesModels;
+    use Illuminate\Queue\SerializesModels;
     /**
-     * @var
-     */
+    * Class CategoryDeleted.
+    */
 
-    public $category;
-
-    /**
-     * @param $category
-     */
-    public function __construct($category)
+    class CategoryDeleted
     {
-        $this->category = $category;
+            use SerializesModels;
+            /**
+            * @var
+            */
+
+
+            public $category ;
+
+            /**
+            * @param $category
+            */
+            public function __construct($category)
+            {
+                 $this->category = $category;
+            }
     }
-}

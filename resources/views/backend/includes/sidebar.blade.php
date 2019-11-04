@@ -10,6 +10,14 @@
             </li>
 
 
+        
+
+        
+
+        
+
+        
+
         {{--start_Person_start--}}
             <li class="nav-item">
                 <a class="nav-link {{ active_class(Active::checkUriPattern('admin/men')) }}" href=" {{ route('admin.man.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.men') }}</a>

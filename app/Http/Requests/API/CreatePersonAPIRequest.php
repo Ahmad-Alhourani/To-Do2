@@ -24,6 +24,6 @@ class CreatePersonAPIRequest extends APIRequest
      */
     public function rules()
     {
-        return []; // Person::$rules;
+         return[];// Person::$rules;
     }
 }

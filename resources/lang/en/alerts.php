@@ -44,35 +44,47 @@ return [
                 'Your information was successfully sent. We will respond back to the e-mail provided as soon as we can.'
         ],
 
-        //start_Person_start
+        
+
+        
+
+        
+
+        
+
+            ,
+    //start_Person_start
         'man' => [
-            'saved' => 'Person saved successfully.',
-            'updated' => 'Person updated successfully.',
-            'deleted' => 'Person deleted successfully.'
-        ],
+                'saved' => 'Person saved successfully.',
+                'updated' => 'Person updated successfully.',
+                'deleted' => 'Person deleted successfully.'
+        ]
         //end_Person_end
 
-        //start_Todo_start
+            ,
+    //start_Todo_start
         'todo' => [
-            'saved' => 'Todo saved successfully.',
-            'updated' => 'Todo updated successfully.',
-            'deleted' => 'Todo deleted successfully.'
-        ],
+                'saved' => 'Todo saved successfully.',
+                'updated' => 'Todo updated successfully.',
+                'deleted' => 'Todo deleted successfully.'
+        ]
         //end_Todo_end
 
-        //start_Comment_start
+            ,
+    //start_Comment_start
         'comment' => [
-            'saved' => 'Comment saved successfully.',
-            'updated' => 'Comment updated successfully.',
-            'deleted' => 'Comment deleted successfully.'
-        ],
+                'saved' => 'Comment saved successfully.',
+                'updated' => 'Comment updated successfully.',
+                'deleted' => 'Comment deleted successfully.'
+        ]
         //end_Comment_end
 
-        //start_Category_start
+            ,
+    //start_Category_start
         'category' => [
-            'saved' => 'Category saved successfully.',
-            'updated' => 'Category updated successfully.',
-            'deleted' => 'Category deleted successfully.'
+                'saved' => 'Category saved successfully.',
+                'updated' => 'Category updated successfully.',
+                'deleted' => 'Category deleted successfully.'
         ]
         //end_Category_end
 

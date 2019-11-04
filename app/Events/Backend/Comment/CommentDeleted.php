@@ -1,24 +1,25 @@
 <?php namespace App\Events\Backend\Comment;
 
-use Illuminate\Queue\SerializesModels;
-/**
- * Class CommentDeleted.
- */
-
-class CommentDeleted
-{
-    use SerializesModels;
+    use Illuminate\Queue\SerializesModels;
     /**
-     * @var
-     */
+    * Class CommentDeleted.
+    */
 
-    public $comment;
-
-    /**
-     * @param $comment
-     */
-    public function __construct($comment)
+    class CommentDeleted
     {
-        $this->comment = $comment;
+            use SerializesModels;
+            /**
+            * @var
+            */
+
+
+            public $comment ;
+
+            /**
+            * @param $comment
+            */
+            public function __construct($comment)
+            {
+                 $this->comment = $comment;
+            }
     }
-}

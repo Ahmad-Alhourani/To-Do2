@@ -1,40 +1,44 @@
 <?php
-namespace App\Http\Requests\Backend\Person;
+  namespace App\Http\Requests\Backend\Person;
+  
+  use Illuminate\Foundation\Http\FormRequest;
+  use Illuminate\Support\Facades\Gate;
+  use Illuminate\Validation\Rule;
 
-use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Validation\Rule;
 
-class UpdatePerson extends FormRequest
-{
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
+  class UpdatePerson extends FormRequest{
 
-    public function authorize()
-    {
-        return true;
-        //   return Gate::allows('admin.man.edit', $this->person);
-    }
+        /**
+        * Determine if the user is authorized to make this request.
+        *
+        * @return bool
+        */
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array
-     */
+        public function authorize()
+        {
+            return true;
+            //   return Gate::allows('admin.man.edit', $this->person);
+        }
 
-    public function rules()
-    {
-        return [
-            'id' => 'None',
+        /**
+        * Get the validation rules that apply to the request.
+        *
+        * @return array
+        */
 
-            'name' => 'required',
+        public function rules()
+        {
+            return [
+             
+             'id'=>'None',
+             
+             'name'=>'required',
+             
+             'email'=>'required',
+             
+             'sms'=>'nullable',
 
-            'email' => 'required',
+            ];
+        }
 
-            'sms' => 'nullable'
-        ];
-    }
 }

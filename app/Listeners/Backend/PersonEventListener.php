@@ -2,57 +2,58 @@
 namespace App\Listeners\Backend;
 
 /**
- * Class PersonEventListener.
- */
+* Class PersonEventListener.
+*/
 /**
- * Class PersonCreated.
- */
+* Class PersonCreated.
+*/
 class PersonEventListener
+
 {
     /**
-     * @param $event
-     */
+    * @param $event
+    */
     public function onCreated($event)
     {
-        \Log::info('Person Created');
+    \Log::info('Person Created');
     }
 
     /**
-     * @param $event
-     */
-    public function onUpdated($event)
-    {
+    * @param $event
+    */
+        public function onUpdated($event)
+        {
         \Log::info('Person  Updated');
-    }
+        }
 
     /**
-     * @param $event
-     */
+    * @param $event
+    */
     public function onDeleted($event)
     {
-        \Log::info('Person Deleted');
+    \Log::info('Person Deleted');
     }
 
     /**
-     * Register the listeners for the subscriber.
-     *
-     * @param \Illuminate\Events\Dispatcher $events
-     */
+    * Register the listeners for the subscriber.
+    *
+    * @param \Illuminate\Events\Dispatcher $events
+    */
     public function subscribe($events)
     {
-        $events->listen(
+            $events->listen(
             \App\Events\Backend\Person\PersonCreated::class,
             'App\Listeners\Backend\PersonEventListener@onCreated'
-        );
+            );
 
-        $events->listen(
+            $events->listen(
             \App\Events\Backend\Person\PersonUpdated::class,
             'App\Listeners\Backend\PersonEventListener@onUpdated'
-        );
+            );
 
-        $events->listen(
+            $events->listen(
             \App\Events\Backend\Person\PersonDeleted::class,
             'App\Listeners\Backend\PersonEventListener@onDeleted'
-        );
+            );
     }
 }

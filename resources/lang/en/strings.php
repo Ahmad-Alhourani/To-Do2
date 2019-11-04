@@ -34,27 +34,31 @@ return [
             'title' => 'Articles'
         ],
 
-        //start_Person_start
-        'men' => [
-            'title' => ' People'
-        ],
-        //end_Person_end
-        //start_Todo_start
-        'todos' => [
-            'title' => ' Todoes'
-        ],
-        //end_Todo_end
-        //start_Comment_start
-        'comments' => [
-            'title' => ' Comments'
-        ],
-        //end_Comment_end
-        //start_Category_start
-        'categories' => [
-            'title' => ' Categories'
-        ],
-        //end_Category_end
-        // Do not delete me :) I'm used for auto-generation
+        
+        
+        
+        
+         //start_Person_start
+    'men' => [
+            'title'   => ' People'
+    ],
+    //end_Person_end
+ //start_Todo_start
+    'todos' => [
+            'title'   => ' Todoes'
+    ],
+    //end_Todo_end
+ //start_Comment_start
+    'comments' => [
+            'title'   => ' Comments'
+    ],
+    //end_Comment_end
+ //start_Category_start
+    'categories' => [
+            'title'   => ' Categories'
+    ],
+    //end_Category_end
+// Do not delete me :) I'm used for auto-generation
 
         'general' => [
             'all_rights_reserved' => 'All Rights Reserved.',

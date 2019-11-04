@@ -3,7 +3,7 @@
 
        
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.categories.id'))->class('col-md-2 form-control-label')->for('id') }}
+            {{ html()->label(__('labels.backend.categories.table.id'))->class('col-md-2 form-control-label')->for('id') }}
             <div class="col-md-10">
        
 
@@ -13,7 +13,7 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.categories.name'))->class('col-md-2 form-control-label')->for('name') }}
+            {{ html()->label(__('labels.backend.categories.table.name'))->class('col-md-2 form-control-label')->for('name') }}
             <div class="col-md-10">
        
 
