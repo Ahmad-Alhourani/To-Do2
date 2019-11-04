@@ -16,11 +16,7 @@
 
         
 
-        {{--start_Category_start--}}
-            <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/categories')) }}" href=" {{ route('admin.category.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.categories') }}</a>
-            </li>
-            {{--end_Category_end--}}
+        
 
         {{--start_Person_start--}}
             <li class="nav-item">
@@ -39,6 +35,12 @@
                 <a class="nav-link {{ active_class(Active::checkUriPattern('admin/comments')) }}" href=" {{ route('admin.comment.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.comments') }}</a>
             </li>
             {{--end_Comment_end--}}
+
+        {{--start_Category_start--}}
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/categories')) }}" href=" {{ route('admin.category.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.categories') }}</a>
+            </li>
+            {{--end_Category_end--}}
 
 {{--Do not delete me :) I'm used for auto-generation--}}
 

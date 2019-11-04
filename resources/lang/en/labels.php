@@ -120,27 +120,7 @@ return [
 
         
 
-        //start_Category_start
-        'categories' => [
-            'management' => ' Categories Management',
-            'create' => 'Create Category',
-            'view' => 'View Category',
-            'edit' => 'Edit Category',
-
-            'table' => [
-                'id' => "Id",
-                'name' => "Name",
-                'sort' => 'Sort',
-                'total' => ' Categories total| Categories total'
-            ],
-
-            'content' => [
-                'created_at' => 'Created At',
-                'deleted_at' => 'Deleted At',
-                'last_updated' => 'Last Update'
-            ]
-        ]
-        //end_Category_end
+        
 
               ,
       //start_Person_start
@@ -225,6 +205,32 @@ return [
                   ]
             ]
             //end_Comment_end
+
+                  ,
+      //start_Category_start
+            'categories' => [
+            'management' => ' Categories Management',
+            'create'     => 'Create Category',
+            'view' => 'View Category',
+            'edit'       => 'Edit Category',
+
+            'table' => [
+                    'id' => "Id", 
+                    'name' => "Name", 
+                    'sort'  => 'Sort',
+                    'total' => ' Categories total| Categories total',
+            ],
+
+
+            'content' => [
+                    'created_at'    => 'Created At',
+                     'deleted_at'    => 'Deleted At',
+                    'last_updated'  => 'Last Update',  
+
+
+                  ]
+            ]
+            //end_Category_end
 
             // Do not delete me :) I'm used for auto-generation
     ],

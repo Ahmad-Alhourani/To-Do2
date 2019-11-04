@@ -3,7 +3,7 @@
         <thead>
         <tr>
                 
-                  <th>@sortablelink('name', trans('labels.backend.categories.table.name')) </th>
+                 <th>@sortablelink('name', trans('labels.backend.categories.table.name')) </th>
                 
             <th>{{ __('labels.general.actions') }}</th>
         </tr>

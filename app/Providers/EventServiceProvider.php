@@ -49,9 +49,7 @@ class EventServiceProvider extends ServiceProvider
 
         
 
-        //start_Category_start
-        \App\Listeners\Backend\CategoryEventListener::class
-        //end_Category_end
+        
 
               ,
      //start_Person_start
@@ -67,6 +65,11 @@ class EventServiceProvider extends ServiceProvider
      //start_Comment_start
         \App\Listeners\Backend\CommentEventListener::class
         //end_Comment_end
+
+              ,
+     //start_Category_start
+        \App\Listeners\Backend\CategoryEventListener::class
+        //end_Category_end
 
         // Do not delete me :) I'm used for auto-generation
     ];

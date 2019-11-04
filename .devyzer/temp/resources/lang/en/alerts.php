@@ -48,13 +48,7 @@ return [
 
         
 
-        //start_Comment_start
-        'comment' => [
-            'saved' => 'Comment saved successfully.',
-            'updated' => 'Comment updated successfully.',
-            'deleted' => 'Comment deleted successfully.'
-        ],
-        //end_Comment_end
+        
 
         //start_Category_start
         'category' => [
@@ -81,6 +75,15 @@ return [
                 'deleted' => 'Todo deleted successfully.'
         ]
         //end_Todo_end
+
+            ,
+    //start_Comment_start
+        'comment' => [
+                'saved' => 'Comment saved successfully.',
+                'updated' => 'Comment updated successfully.',
+                'deleted' => 'Comment deleted successfully.'
+        ]
+        //end_Comment_end
 
         // Do not delete me :) I'm used for auto-generation
     ]

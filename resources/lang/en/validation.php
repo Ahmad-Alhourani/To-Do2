@@ -198,12 +198,7 @@ return [
             
             
             
-            //start_Category_start
-            'categories' => [
-                'id' => "Id",
-                'name' => "Name"
-            ]
-            //end_Category_end
+            
                ,
    //start_Person_start
         'men'  => [
@@ -231,6 +226,13 @@ return [
             'todo_id' => "Todo Title",
         ]
         //end_Comment_end
+   ,
+   //start_Category_start
+        'categories'  => [
+            'id' => "Id",
+            'name' => "Name",
+        ]
+        //end_Category_end
 // Do not delete me :) I'm used for auto-generation
         ],
 
