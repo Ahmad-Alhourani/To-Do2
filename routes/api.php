@@ -20,10 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 
-//start_Comment_start
-Route::resource('comment', 'API\CommentAPIController');
 
-//end_Comment_end
 
 //start_Category_start
 Route::resource('category', 'API\CategoryAPIController');
@@ -39,5 +36,10 @@ Route::resource('man', 'API\PersonAPIController');
 Route::resource('todo', 'API\TodoAPIController');
 
 //end_Todo_end
+
+//start_Comment_start 
+Route::resource('comment', 'API\CommentAPIController');
+
+//end_Comment_end
 
 //*****Do Not Delete Me

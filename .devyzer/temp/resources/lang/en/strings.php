@@ -35,11 +35,7 @@ return [
         ],
 
         
-        //start_Todo_start
-        'todos' => [
-            'title' => ' Todoes'
-        ],
-        //end_Todo_end
+        
         //start_Comment_start
         'comments' => [
             'title' => ' Comments'
@@ -55,6 +51,11 @@ return [
             'title'   => ' People'
     ],
     //end_Person_end
+ //start_Todo_start
+    'todos' => [
+            'title'   => ' Todoes'
+    ],
+    //end_Todo_end
 // Do not delete me :) I'm used for auto-generation
 
         'general' => [

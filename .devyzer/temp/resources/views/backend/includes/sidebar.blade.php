@@ -12,11 +12,7 @@
 
         
 
-        {{--start_Todo_start--}}
-            <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/todos')) }}" href=" {{ route('admin.todo.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.todos') }}</a>
-            </li>
-            {{--end_Todo_end--}}
+        
 
         {{--start_Comment_start--}}
             <li class="nav-item">
@@ -35,6 +31,12 @@
                 <a class="nav-link {{ active_class(Active::checkUriPattern('admin/men')) }}" href=" {{ route('admin.man.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.men') }}</a>
             </li>
             {{--end_Person_end--}}
+
+        {{--start_Todo_start--}}
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/todos')) }}" href=" {{ route('admin.todo.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.todos') }}</a>
+            </li>
+            {{--end_Todo_end--}}
 
 {{--Do not delete me :) I'm used for auto-generation--}}
 

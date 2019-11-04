@@ -2,58 +2,57 @@
 namespace App\Listeners\Backend;
 
 /**
-* Class CommentEventListener.
-*/
+ * Class CommentEventListener.
+ */
 /**
-* Class CommentCreated.
-*/
+ * Class CommentCreated.
+ */
 class CommentEventListener
-
 {
     /**
-    * @param $event
-    */
+     * @param $event
+     */
     public function onCreated($event)
     {
-    \Log::info('Comment Created');
+        \Log::info('Comment Created');
     }
 
     /**
-    * @param $event
-    */
-        public function onUpdated($event)
-        {
+     * @param $event
+     */
+    public function onUpdated($event)
+    {
         \Log::info('Comment  Updated');
-        }
+    }
 
     /**
-    * @param $event
-    */
+     * @param $event
+     */
     public function onDeleted($event)
     {
-    \Log::info('Comment Deleted');
+        \Log::info('Comment Deleted');
     }
 
     /**
-    * Register the listeners for the subscriber.
-    *
-    * @param \Illuminate\Events\Dispatcher $events
-    */
+     * Register the listeners for the subscriber.
+     *
+     * @param \Illuminate\Events\Dispatcher $events
+     */
     public function subscribe($events)
     {
-            $events->listen(
+        $events->listen(
             \App\Events\Backend\Comment\CommentCreated::class,
             'App\Listeners\Backend\CommentEventListener@onCreated'
-            );
+        );
 
-            $events->listen(
+        $events->listen(
             \App\Events\Backend\Comment\CommentUpdated::class,
             'App\Listeners\Backend\CommentEventListener@onUpdated'
-            );
+        );
 
-            $events->listen(
+        $events->listen(
             \App\Events\Backend\Comment\CommentDeleted::class,
             'App\Listeners\Backend\CommentEventListener@onDeleted'
-            );
+        );
     }
 }

@@ -24,6 +24,6 @@ class CreateCommentAPIRequest extends APIRequest
      */
     public function rules()
     {
-         return[];// Comment::$rules;
+        return []; // Comment::$rules;
     }
 }

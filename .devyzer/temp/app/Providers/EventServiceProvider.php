@@ -45,9 +45,7 @@ class EventServiceProvider extends ServiceProvider
 
         
 
-        //start_Todo_start
-        \App\Listeners\Backend\TodoEventListener::class,
-        //end_Todo_end
+        
 
         //start_Comment_start
         \App\Listeners\Backend\CommentEventListener::class,
@@ -61,6 +59,11 @@ class EventServiceProvider extends ServiceProvider
      //start_Person_start
         \App\Listeners\Backend\PersonEventListener::class
         //end_Person_end
+
+              ,
+     //start_Todo_start
+        \App\Listeners\Backend\TodoEventListener::class
+        //end_Todo_end
 
         // Do not delete me :) I'm used for auto-generation
     ];
