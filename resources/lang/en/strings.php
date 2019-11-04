@@ -34,11 +34,7 @@ return [
             'title' => 'Articles'
         ],
 
-        //start_Person_start
-        'men' => [
-            'title' => ' People'
-        ],
-        //end_Person_end
+        
         //start_Todo_start
         'todos' => [
             'title' => ' Todoes'
@@ -54,7 +50,12 @@ return [
             'title' => ' Categories'
         ],
         //end_Category_end
-        // Do not delete me :) I'm used for auto-generation
+         //start_Person_start
+    'men' => [
+            'title'   => ' People'
+    ],
+    //end_Person_end
+// Do not delete me :) I'm used for auto-generation
 
         'general' => [
             'all_rights_reserved' => 'All Rights Reserved.',

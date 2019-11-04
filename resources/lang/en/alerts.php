@@ -44,13 +44,7 @@ return [
                 'Your information was successfully sent. We will respond back to the e-mail provided as soon as we can.'
         ],
 
-        //start_Person_start
-        'man' => [
-            'saved' => 'Person saved successfully.',
-            'updated' => 'Person updated successfully.',
-            'deleted' => 'Person deleted successfully.'
-        ],
-        //end_Person_end
+        
 
         //start_Todo_start
         'todo' => [
@@ -75,6 +69,15 @@ return [
             'deleted' => 'Category deleted successfully.'
         ]
         //end_Category_end
+
+            ,
+    //start_Person_start
+        'man' => [
+                'saved' => 'Person saved successfully.',
+                'updated' => 'Person updated successfully.',
+                'deleted' => 'Person deleted successfully.'
+        ]
+        //end_Person_end
 
         // Do not delete me :) I'm used for auto-generation
     ]

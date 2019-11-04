@@ -48,9 +48,7 @@ return [
             'history' => 'History',
             'system' => 'System',
 
-            //begin_Person_begin
-            'men' => ' People',
-            //finish_Person_finish
+            
             //begin_Todo_begin
             'todos' => ' Todoes',
             //finish_Todo_finish
@@ -60,19 +58,14 @@ return [
             //begin_Category_begin
             'categories' => ' Categories'
             //finish_Category_finish
-            // **********Do_Not_Delete_me****************
+                ,
+    //begin_Person_begin
+        'men'    => ' People'
+         //finish_Person_finish
+        // **********Do_Not_Delete_me****************
         ],
 
-        //start_Person_start
-        'men' => [
-            'view' => 'View Person',
-            'all' => 'All  People',
-            'create' => 'Create Person',
-            'edit' => 'Edit Person',
-            'management' => 'Person Management',
-            'main' => ' People'
-        ],
-        //end_Person_end
+        
 
         //start_Todo_start
         'todos' => [
@@ -107,7 +100,19 @@ return [
         ]
         //end_Category_end
 
-        // Do not delete me :) I'm used for auto-generation
+            ,
+     //start_Person_start
+            'men' => [
+                        'view'        => 'View Person',
+                        'all'        => 'All  People',
+                        'create'     => 'Create Person',
+                        'edit'       => 'Edit Person',
+                        'management' => 'Person Management',
+                        'main'       => ' People',
+            ]
+             //end_Person_end
+
+            // Do not delete me :) I'm used for auto-generation
     ],
 
     'language-picker' => [

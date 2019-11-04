@@ -3,9 +3,9 @@
         <thead>
         <tr>
                 
-                 <th>@sortablelink('name', trans('labels.backend.men.table.name')) </th>
+                  <th>@sortablelink('name', trans('labels.backend.men.table.name')) </th>
                 
-                 <th>@sortablelink('email', trans('labels.backend.men.table.email')) </th>
+                  <th>@sortablelink('email', trans('labels.backend.men.table.email')) </th>
                 
                  <th>{{ __('labels.backend.men.table.sms') }}</th>
                 

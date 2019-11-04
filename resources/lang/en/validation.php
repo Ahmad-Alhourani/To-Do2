@@ -195,14 +195,7 @@ return [
                 ]
             ],
 
-            //start_Person_start
-            'men' => [
-                'id' => "Id",
-                'name' => "Name",
-                'email' => "Email",
-                'sms' => "SMS"
-            ],
-            //end_Person_end
+            
             //start_Todo_start
             'todos' => [
                 'id' => "Id",
@@ -225,7 +218,16 @@ return [
                 'name' => "Name"
             ]
             //end_Category_end
-            // Do not delete me :) I'm used for auto-generation
+               ,
+   //start_Person_start
+        'men'  => [
+            'id' => "Id",
+            'name' => "Name",
+            'email' => "Email",
+            'sms' => "SMS",
+        ]
+        //end_Person_end
+// Do not delete me :) I'm used for auto-generation
         ],
 
         'frontend' => [
