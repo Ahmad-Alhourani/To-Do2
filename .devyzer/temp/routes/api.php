@@ -16,10 +16,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//start_Person_start
-Route::resource('man', 'API\PersonAPIController');
 
-//end_Person_end
 
 //start_Todo_start
 Route::resource('todo', 'API\TodoAPIController');
@@ -35,5 +32,10 @@ Route::resource('comment', 'API\CommentAPIController');
 Route::resource('category', 'API\CategoryAPIController');
 
 //end_Category_end
+
+//start_Person_start 
+Route::resource('man', 'API\PersonAPIController');
+
+//end_Person_end
 
 //*****Do Not Delete Me

@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Requests\API;
-
 use App\Models\Todo;
 use InfyOm\Generator\Request\APIRequest;
 
-class CreateTodoAPIRequest extends APIRequest
+class UpdateTodoAPIRequest extends APIRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,6 +23,6 @@ class CreateTodoAPIRequest extends APIRequest
      */
     public function rules()
     {
-         return[];// Todo::$rules;
+        return []; // Todo::$rules;
     }
 }

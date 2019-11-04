@@ -2,58 +2,57 @@
 namespace App\Listeners\Backend;
 
 /**
-* Class TodoEventListener.
-*/
+ * Class TodoEventListener.
+ */
 /**
-* Class TodoCreated.
-*/
+ * Class TodoCreated.
+ */
 class TodoEventListener
-
 {
     /**
-    * @param $event
-    */
+     * @param $event
+     */
     public function onCreated($event)
     {
-    \Log::info('Todo Created');
+        \Log::info('Todo Created');
     }
 
     /**
-    * @param $event
-    */
-        public function onUpdated($event)
-        {
+     * @param $event
+     */
+    public function onUpdated($event)
+    {
         \Log::info('Todo  Updated');
-        }
+    }
 
     /**
-    * @param $event
-    */
+     * @param $event
+     */
     public function onDeleted($event)
     {
-    \Log::info('Todo Deleted');
+        \Log::info('Todo Deleted');
     }
 
     /**
-    * Register the listeners for the subscriber.
-    *
-    * @param \Illuminate\Events\Dispatcher $events
-    */
+     * Register the listeners for the subscriber.
+     *
+     * @param \Illuminate\Events\Dispatcher $events
+     */
     public function subscribe($events)
     {
-            $events->listen(
+        $events->listen(
             \App\Events\Backend\Todo\TodoCreated::class,
             'App\Listeners\Backend\TodoEventListener@onCreated'
-            );
+        );
 
-            $events->listen(
+        $events->listen(
             \App\Events\Backend\Todo\TodoUpdated::class,
             'App\Listeners\Backend\TodoEventListener@onUpdated'
-            );
+        );
 
-            $events->listen(
+        $events->listen(
             \App\Events\Backend\Todo\TodoDeleted::class,
             'App\Listeners\Backend\TodoEventListener@onDeleted'
-            );
+        );
     }
 }

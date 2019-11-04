@@ -114,29 +114,7 @@ return [
             ]
         ],
 
-        //start_Person_start
-        'men' => [
-            'management' => ' People Management',
-            'create' => 'Create Person',
-            'view' => 'View Person',
-            'edit' => 'Edit Person',
-
-            'table' => [
-                'id' => "Id",
-                'name' => "Name",
-                'email' => "Email",
-                'sms' => "SMS",
-                'sort' => 'Sort',
-                'total' => ' People total| People total'
-            ],
-
-            'content' => [
-                'created_at' => 'Created At',
-                'deleted_at' => 'Deleted At',
-                'last_updated' => 'Last Update'
-            ]
-        ],
-        //end_Person_end
+        
 
         //start_Todo_start
         'todos' => [
@@ -208,7 +186,35 @@ return [
         ]
         //end_Category_end
 
-        // Do not delete me :) I'm used for auto-generation
+              ,
+      //start_Person_start
+            'men' => [
+            'management' => ' People Management',
+            'create'     => 'Create Person',
+            'view' => 'View Person',
+            'edit'       => 'Edit Person',
+
+            'table' => [
+                    'id' => "Id", 
+                    'name' => "Name", 
+                    'email' => "Email", 
+                    'sms' => "SMS", 
+                    'sort'  => 'Sort',
+                    'total' => ' People total| People total',
+            ],
+
+
+            'content' => [
+                    'created_at'    => 'Created At',
+                     'deleted_at'    => 'Deleted At',
+                    'last_updated'  => 'Last Update',    
+
+
+                  ]
+            ]
+            //end_Person_end
+
+            // Do not delete me :) I'm used for auto-generation
     ],
 
     'frontend' => [

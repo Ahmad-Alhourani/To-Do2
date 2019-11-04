@@ -1,24 +1,25 @@
 <?php
-namespace App\Events\Backend\Todo;
+    namespace App\Events\Backend\Todo;
 
-use Illuminate\Queue\SerializesModels;
-/**
- * Class TodoCreated.
- */
-class TodoCreated
-{
-    use SerializesModels;
+    use Illuminate\Queue\SerializesModels;
     /**
-     * @var
-     */
-
-    public $todo;
-
-    /**
-     * @param $todo
-     */
-    public function __construct($todo)
+    * Class TodoCreated.
+    */
+    class TodoCreated
     {
-        $this->todo = $todo;
+            use SerializesModels;
+            /**
+            * @var
+            */
+
+
+            public $todo ;
+
+            /**
+            * @param $todo
+            */
+            public function __construct($todo)
+            {
+                 $this->todo = $todo;
+            }
     }
-}

@@ -10,11 +10,7 @@
             </li>
 
 
-        {{--start_Person_start--}}
-            <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/men')) }}" href=" {{ route('admin.man.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.men') }}</a>
-            </li>
-            {{--end_Person_end--}}
+        
 
         {{--start_Todo_start--}}
             <li class="nav-item">
@@ -33,6 +29,12 @@
                 <a class="nav-link {{ active_class(Active::checkUriPattern('admin/categories')) }}" href=" {{ route('admin.category.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.categories') }}</a>
             </li>
             {{--end_Category_end--}}
+
+        {{--start_Person_start--}}
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/men')) }}" href=" {{ route('admin.man.index') }}"><i class="icon-list"></i> {{ __('menus.backend.sidebar.men') }}</a>
+            </li>
+            {{--end_Person_end--}}
 
 {{--Do not delete me :) I'm used for auto-generation--}}
 

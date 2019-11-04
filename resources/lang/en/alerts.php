@@ -46,13 +46,7 @@ return [
 
         
 
-        //start_Todo_start
-        'todo' => [
-            'saved' => 'Todo saved successfully.',
-            'updated' => 'Todo updated successfully.',
-            'deleted' => 'Todo deleted successfully.'
-        ],
-        //end_Todo_end
+        
 
         //start_Comment_start
         'comment' => [
@@ -78,6 +72,15 @@ return [
                 'deleted' => 'Person deleted successfully.'
         ]
         //end_Person_end
+
+            ,
+    //start_Todo_start
+        'todo' => [
+                'saved' => 'Todo saved successfully.',
+                'updated' => 'Todo updated successfully.',
+                'deleted' => 'Todo deleted successfully.'
+        ]
+        //end_Todo_end
 
         // Do not delete me :) I'm used for auto-generation
     ]

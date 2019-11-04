@@ -48,9 +48,7 @@ return [
             'history' => 'History',
             'system' => 'System',
 
-            //begin_Person_begin
-            'men' => ' People',
-            //finish_Person_finish
+            
             //begin_Todo_begin
             'todos' => ' Todoes',
             //finish_Todo_finish
@@ -60,21 +58,16 @@ return [
             //begin_Category_begin
             'categories' => ' Categories'
             //finish_Category_finish
-            // **********Do_Not_Delete_me****************
+                ,
+    //begin_Person_begin
+        'men'    => ' People'
+         //finish_Person_finish
+        // **********Do_Not_Delete_me****************
         ],
 
         
 
-        //start_Todo_start
-        'todos' => [
-            'view' => 'View Todo',
-            'all' => 'All  Todoes',
-            'create' => 'Create Todo',
-            'edit' => 'Edit Todo',
-            'management' => 'Todo Management',
-            'main' => ' Todoes'
-        ],
-        //end_Todo_end
+        
 
         //start_Comment_start
         'comments' => [
@@ -109,6 +102,18 @@ return [
                         'main'       => ' People',
             ]
              //end_Person_end
+
+                ,
+     //start_Todo_start
+            'todos' => [
+                        'view'        => 'View Todo',
+                        'all'        => 'All  Todoes',
+                        'create'     => 'Create Todo',
+                        'edit'       => 'Edit Todo',
+                        'management' => 'Todo Management',
+                        'main'       => ' Todoes',
+            ]
+             //end_Todo_end
 
             // Do not delete me :) I'm used for auto-generation
     ],

@@ -24,6 +24,6 @@ class CreateTodoAPIRequest extends APIRequest
      */
     public function rules()
     {
-         return[];// Todo::$rules;
+        return []; // Todo::$rules;
     }
 }

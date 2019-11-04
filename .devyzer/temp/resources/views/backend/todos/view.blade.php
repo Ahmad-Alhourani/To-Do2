@@ -3,7 +3,7 @@
 
        
             <div class="form-group row">
-            {{ html()->label(__('labels.backend.todos.table.id'))->class('col-md-2 form-control-label')->for('id') }}
+            {{ html()->label(__('validation.attributes.backend.todos.id'))->class('col-md-2 form-control-label')->for('id') }}
             <div class="col-md-10">
        
 
@@ -13,7 +13,7 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('labels.backend.todos.table.title'))->class('col-md-2 form-control-label')->for('title') }}
+            {{ html()->label(__('validation.attributes.backend.todos.title'))->class('col-md-2 form-control-label')->for('title') }}
             <div class="col-md-10">
        
 
@@ -23,7 +23,7 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('labels.backend.todos.table.description'))->class('col-md-2 form-control-label')->for('description') }}
+            {{ html()->label(__('validation.attributes.backend.todos.description'))->class('col-md-2 form-control-label')->for('description') }}
             <div class="col-md-10">
        
 
@@ -33,7 +33,7 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('labels.backend.todos.table.deadline'))->class('col-md-2 form-control-label')->for('deadline') }}
+            {{ html()->label(__('validation.attributes.backend.todos.deadline'))->class('col-md-2 form-control-label')->for('deadline') }}
             <div class="col-md-10">
        
 

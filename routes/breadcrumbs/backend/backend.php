@@ -9,39 +9,7 @@ Breadcrumbs::for('admin.dashboard', function ($trail) {
 
 
 
-//start_Todo_start
-Breadcrumbs::register('admin.todo.index', function ($breadcrumbs) {
-    $breadcrumbs->parent('admin.dashboard');
-    $breadcrumbs->push(
-        __('strings.backend.todos.title'),
-        route('admin.todo.index')
-    );
-});
 
-Breadcrumbs::register('admin.todo.create', function ($breadcrumbs) {
-    $breadcrumbs->parent('admin.todo.index');
-    $breadcrumbs->push(
-        __('labels.backend.todos.create'),
-        route('admin.todo.create')
-    );
-});
-
-Breadcrumbs::register('admin.todo.show', function ($breadcrumbs, $id) {
-    $breadcrumbs->parent('admin.todo.index');
-    $breadcrumbs->push(
-        __('menus.backend.todos.view'),
-        route('admin.todo.show', $id)
-    );
-});
-
-Breadcrumbs::register('admin.todo.edit', function ($breadcrumbs, $id) {
-    $breadcrumbs->parent('admin.todo.index');
-    $breadcrumbs->push(
-        __('menus.backend.todos.edit'),
-        route('admin.todo.edit', $id)
-    );
-});
-//end_Todo_end
 
 //start_Comment_start
 Breadcrumbs::register('admin.comment.index', function ($breadcrumbs) {
@@ -133,6 +101,29 @@ $breadcrumbs->parent('admin.man.index');
 $breadcrumbs->push(__('menus.backend.men.edit'), route('admin.man.edit', $id));
 });
 //end_Person_end
+
+
+//start_Todo_start
+Breadcrumbs::register('admin.todo.index', function ($breadcrumbs) {
+$breadcrumbs->parent('admin.dashboard');
+$breadcrumbs->push(__('strings.backend.todos.title'), route('admin.todo.index'));
+});
+
+Breadcrumbs::register('admin.todo.create', function ($breadcrumbs) {
+$breadcrumbs->parent('admin.todo.index');
+$breadcrumbs->push(__('labels.backend.todos.create'), route('admin.todo.create'));
+});
+
+Breadcrumbs::register('admin.todo.show', function ($breadcrumbs, $id) {
+$breadcrumbs->parent('admin.todo.index');
+$breadcrumbs->push(__('menus.backend.todos.view'), route('admin.todo.show', $id));
+});
+
+Breadcrumbs::register('admin.todo.edit', function ($breadcrumbs, $id) {
+$breadcrumbs->parent('admin.todo.index');
+$breadcrumbs->push(__('menus.backend.todos.edit'), route('admin.todo.edit', $id));
+});
+//end_Todo_end
 
 //*****Do Not Delete Me
 

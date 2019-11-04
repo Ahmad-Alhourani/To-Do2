@@ -3,11 +3,11 @@
         <thead>
         <tr>
                 
-                  <th>@sortablelink('title', trans('labels.backend.todos.table.title')) </th>
+                 <th>@sortablelink('title', trans('labels.backend.todos.table.title')) </th>
                 
                  <th>{{ __('labels.backend.todos.table.description') }}</th>
                 
-                  <th>@sortablelink('deadline', trans('labels.backend.todos.table.deadline')) </th>
+                 <th>@sortablelink('deadline', trans('labels.backend.todos.table.deadline')) </th>
                 
                 <th>{{ __('Categorys') }}</th>
             <th>{{ __('labels.general.actions') }}</th>
